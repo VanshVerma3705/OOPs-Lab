@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class Employee{
+      private:
+        int salary;
+      public:
+        void setsalary(int S)
+        {
+             salary =S;
+        }
+        int getsalary()
+        {
+            return salary;
+        }
+};
+int main()
+{
+    Employee myobj;
+    myobj.setsalary(50000);
+    cout << myobj.getsalary() << endl;
+    return 0;
+}
